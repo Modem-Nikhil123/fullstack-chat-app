@@ -7,7 +7,9 @@ const authRoutes=require("./routes/auth.js");
 const messageRoutes=require('./routes/message.js');
 const {app,server} = require('./lib/socket.js');
 const path = require('path');
+
 dotenv.config();
+
 
 const PORT=process.env.PORT;
 app.use(express.json());
